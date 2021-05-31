@@ -58,21 +58,6 @@
       .huruf_navbar:focus {
         box-shadow: 0 0 0 3px #8659e9;
       }
-      .menu_mobile {
-        position: relative;
-        float: right;
-        display: none;
-      }
-      .huruf_menu_mobile {
-        font-size: 14px;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 5px 10px 5px 10px;
-        border: 1px solid gray;
-        color: gray;
-        font-family: "Helvetica", sans-serif;
-      }
       /* HOME */
       .kotak_jumbptron {
         position: relative;
@@ -116,11 +101,19 @@
         color: black;
         font-family: "Helvetica", sans-serif;
       }
+      .huruf_penyakit_tabel:hover {
+        background-color: #5d2fdf;
+        color: white;
+        /*background-color: rgb(201, 201, 201);*/
+      }
+      .huruf_penyakit_tabel:focus {
+        box-shadow: 0 0 0 3px #8659e9;
+      }
       /* PESAN */
       .kotak_pesan {
         text-align: center;
         width: 100%;
-        height: 400px;
+        height: 420px;
         background: black;
       }
       .huruf_pesan {
@@ -129,12 +122,19 @@
         color: white;
         font-family: "Helvetica", sans-serif;
       }
+      /* POSTER */
+      .kotak_poster {
+        text-align: center;
+        width: 100%;
+        height: 607px;
+        background: white;
+      }
       /* FOOTER */
       .footer {
         position: relative;
         width: 100%;
         height: 60px;
-        background-color: white;
+        background-color: black;
         /*box-shadow: -1px -7px 20px 0px gray;*/
       }
       .kotak_footer {
@@ -147,7 +147,7 @@
         left: 45%;
         font-size: 15px;
         font-weight: bold;
-        color: black;
+        color: white;
         font-family: "Helvetica", sans-serif;
       }
     </style>
@@ -155,9 +155,6 @@
   <body>
     <!-- BAGIAN NAVBAR -->
     <nav class="navbar">
-      <div class="menu_mobile">
-        <a class="huruf_menu_mobile" href="#">MENU</a>
-      </div>
       <ul class="kotak_navbar" style="float: left; left: 5%">
         <li class="posisi_huruf_navbar">
           <a href="https://www.trunojoyo.ac.id/"><img src="img1/LOGO UTM.png" width="20px" alt="" /></a>
@@ -194,41 +191,71 @@
       <table width="100%" border="0" style="text-align: center">
         <tr>
           <td style="text-align: center; padding: 30px" width="30%">
-            <a href="penyakit/menu_kanker paru-paru.html" class="huruf_penyakit_tabel"><img src="img1/kanker paru-paru.png" width="100px" alt="" /><br />Kanker Paru-Paru</a>
+           <a href="penyakit/menu_kanker paru-paru.html" style="text-decoration: none">
+              <img src="img1/kanker paru-paru.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Kanker Paru-Paru</div>
+            </a>
           </td>
           <td style="text-align: center; padding: 30px" width="30%">
-            <a href="penyakit/menu_Asma" class="huruf_penyakit_tabel"><img src="img1/asma.png" width="100px" alt="" /><br />Asma</a>
+            <a href="penyakit/menu_Asma.html" style="text-decoration: none">
+              <img src="img1/asma.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Asma</div>
+            </a>
           </td>
           <td style="text-align: center; padding: 30px" width="30%">
-            <a href="penyakit/menu_diabetestipe2.html" class="huruf_penyakit_tabel"><img src="img1/diabetes tipe 2.png" width="100px" alt="" /><br />Diabetes Tipe 2</a>
+           <a href="penyakit/menu_diabetestipe2.html" style="text-decoration: none">
+              <img src="img1/diabetes tipe 2.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Diabetes Tipe 2</div>
+            </a>
           </td>
         </tr>
         <tr>
           <td style="text-align: center; padding: 30px">
-            <a href="penyakit/menu_dimensia" class="huruf_penyakit_tabel"><img src="img1/dimensia.png" width="100px" alt="" /><br />Dimensia Alzeimer</a>
+            <a href="penyakit/menu_dimensia.html" style="text-decoration: none">
+              <img src="img1/dimensia.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Demensia Alzheimer</div>
+            </a>
           </td>
           <td style="text-align: center; padding: 30px">
-            <a href="penyakit/menu_tuberkulosis.html" class="huruf_penyakit_tabel"><img src="img1/tuberkulosis.png" width="100px" alt="" /><br />Tuberkulosis</a>
+            <a href="penyakit/menu_tuberkulosis.html" style="text-decoration: none">
+              <img src="img1/tuberkulosis.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Tuberkulosis</div>
+            </a>
           </td>
           <td style="text-align: center; padding: 30px">
-            <a href="penyakit/literasi_menstruasi dan menopause.html" class="huruf_penyakit_tabel"><img src="img1/menstruasi.png" width="100px" alt="" /><br />Menstruasi dan Menopause</a>
+            <a href="penyakit/literasi_menstruasi dan menopause.html" style="text-decoration: none">
+              <img src="img1/menstruasi.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Menstruasi dan Menopause</div>
+            </a>
           </td>
         </tr>
         <tr>
           <td style="text-align: center; padding: 30px">
-            <a href="penyakit/literasi_Kelainan Kelahiran.html" class="huruf_penyakit_tabel"><img src="img1/kelainan kelahiran.png" width="100px" alt="" /><br />Kelainan Kelahiran</a>
+            <a href="penyakit/literasi_Kelainan Kelahiran.html" style="text-decoration: none">
+              <img src="img1/kelainan kelahiran.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Kelainan Kelahiran</div>
+            </a>
           </td>
           <td style="text-align: center; padding: 30px">
-            <a href="penyakit/literasi_tulang yang lemah.html" class="huruf_penyakit_tabel"><img src="img1/tulang lemah.png" width="100px" alt="" /><br />Tulang Yang Lemah</a>
+            <a href="penyakit/literasi_tulang yang lemah.html" style="text-decoration: none">
+              <img src="img1/tulang lemah.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Tulang yang Lemah</div>
+            </a>
           </td>
           <td style="text-align: center; padding: 30px">
-            <a href="penyakit/literasi_kehilanganpendengaran" class="huruf_penyakit_tabel"><img src="img1/kehilangan pendengeran.png" width="100px" alt="" /><br />Kehilangan Pendengaran</a>
+            <a href="penyakit/literasi_kehilanganpendengaran.html" style="text-decoration: none">
+              <img src="img1/kehilangan pendengeran.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Kehilangan Pendengaran</div>
+            </a>
           </td>
         </tr>
         <tr>
           <td><br /></td>
           <td style="text-align: center; padding: 30px">
-            <a href="penyakit/literasi_kerusakankulit" class="huruf_penyakit_tabel"><img src="img1/kerusakan kulit.png" width="100px" alt="" /><br />Kerusakan Kulit</a>
+            <a href="penyakit/literasi_kerusakankulit.html" style="text-decoration: none">
+              <img src="img1/kerusakan kulit.png" width="100px" alt="" />
+              <div class="huruf_penyakit_tabel">Kerusakan Kulit</div>
+            </a>
           </td>
           <td><br /></td>
         </tr>
@@ -239,7 +266,31 @@
       <br /><br />
       <div class="huruf_pesan">BERHENTILAH MEROKOK</div>
       <div class="huruf_pesan">DENGAN PENUH KESADARAN</div>
-      <img src="img1/dilarang merokok.png" width="200px" alt="" />
+      <img src="img1/dilarang merokok.png" width="200px" alt="" /><br /><br /><br />
+      <div>
+        <a href="#poster" style="text-decoration: none; color: white; font-family: Helvetica, sans-serif">#MerokokMembunuhmu&emsp;</a>
+        <a href="#poster" style="text-decoration: none; color: white; font-family: Helvetica, sans-serif">#MerokokResikoCovid19&emsp;</a>
+        <a href="#poster" style="text-decoration: none; color: white; font-family: Helvetica, sans-serif">#MerokokMembahayakanKesehatan&emsp;</a>
+        <a href="#poster" style="text-decoration: none; color: white; font-family: Helvetica, sans-serif">#MerokokNggakSeru&emsp;</a>
+        <a href="#poster" style="text-decoration: none; color: white; font-family: Helvetica, sans-serif">#MerokokNggakKeren&emsp;</a>
+        <a href="#poster" style="text-decoration: none; color: white; font-family: Helvetica, sans-serif">#BeraniBerhentiMerokok&emsp;</a>
+      </div>
+    </div>
+    <!-- BAGIAN POSTER -->
+    <div class="kotak_poster" id="poster">
+      <br />
+      <img src="img1/poster1.png" width="200px" alt="" />
+      <img src="img1/poster3.png" width="200px" alt="" />
+      <img src="img1/poster4.png" width="200px" alt="" />
+      <img src="img1/poster5.png" width="200px" alt="" />
+      <img src="img1/poster6.png" width="200px" alt="" />
+      <img src="img1/poster7.png" width="200px" alt="" />
+      <img src="img1/poster8.png" width="200px" alt="" />
+      <img src="img1/poster9.png" width="200px" alt="" />
+      <img src="img1/poster10.png" width="200px" alt="" />
+      <img src="img1/poster11.png" width="200px" alt="" />
+      <img src="img1/poster12.png" width="200px" alt="" />
+      <img src="img1/poster13.png" width="200px" alt="" />
     </div>
     <!-- BAGIAN FOOTER -->
     <div class="footer">
